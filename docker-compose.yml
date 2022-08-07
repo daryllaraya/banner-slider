@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  web:
+    image: landing-page
+    build: .
+    container_name: landing-page_c
+    restart: always
+    ports:
+      - "8080:80"

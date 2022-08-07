@@ -1,0 +1,23 @@
+@use 'abstracts' as *;
+
+/* BUTTON */
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &:focus, &:active, &:active:focus {
+        box-shadow: none;
+    }
+
+    &-primary {
+        background-color: $generic-blue;
+        border: 1px solid $generic-blue;
+        padding: $base-padding * 1 $base-padding * 1.5;
+
+        &:hover, &:focus {
+            background-color: $honolulu-blue;
+        }
+    }
+}
+

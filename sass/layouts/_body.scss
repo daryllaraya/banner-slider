@@ -1,0 +1,42 @@
+@use 'abstracts' as *;
+
+/* ABOUT */
+#about {
+    background-color: $primary;
+
+    h2 {
+        color: $white;
+
+        &::after {
+            margin: $base-margin 0;
+        }
+    }
+
+    .lead {
+        color: $grey;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-top: $base-margin * 2;
+
+        @include lg-up {
+            margin-top: 0;
+        }
+    }
+
+    p {
+        color: $white;
+    }
+}
+
+/* CONTACT */
+#contact {
+    background-color: $secondary;
+
+    h2 {
+        color: $primary;
+    }
+
+    p {
+        color: $white;
+    }
+}

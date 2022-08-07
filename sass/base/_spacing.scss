@@ -1,0 +1,11 @@
+@use 'abstracts' as *;
+
+.py-6 {
+    padding-top: $base-padding * 4;
+    padding-bottom: $base-padding * 4;
+
+    @include md-up {
+        padding-top: $base-padding * 5.4;
+        padding-bottom: $base-padding * 5.4;
+    }
+}

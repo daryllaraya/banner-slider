@@ -1,0 +1,25 @@
+@use 'abstracts' as *;
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include md-up {
+        flex-direction: row;
+    }
+
+    span {
+        font-size: calc(#{$base-font-size} - 4px);
+        margin-bottom: $base-margin;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include md-up {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+@use 'abstracts' as *;
+
+/* BANNER */
+.carousel-caption {
+    top: 50%;
+    bottom: unset;
+    transform: translateY(-50%);
+
+    h2 {
+        color: $white;
+        font-size: $base-font-size;
+        margin-bottom: 0;
+
+        &::after {
+            content: none;
+        }
+
+        @include md-up {
+            font-size: $base-font-size * 2.5;
+            margin-bottom: calc(#{$base-margin} - .25rem);
+        }
+    }
+
+    p {
+        font-size: calc(#{$base-font-size} - 4px);
+
+        @include md-up {
+            font-size: $base-font-size;
+        }
+    }
+
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 1rem;
+    height: 1rem;
+
+    @include md-up {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.carousel-indicators {
+    margin-bottom: calc(#{$base-margin} - 5px);
+
+    @include md-up {
+        margin-bottom: $base-margin * 1.4;
+    }
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+
+    @include md-up {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.overlay {
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        opacity: 0.6;
+    }
+}
+
+.slide {
+    cursor: pointer;
+}

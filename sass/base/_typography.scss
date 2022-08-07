@@ -1,0 +1,25 @@
+@use 'abstracts' as *;
+
+body {
+  font-family: $font-family-lato;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $black;
+  font-family: $font-family-anton;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+main {
+  h1, h2 {
+    &::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 5px;
+      background-color: $grey;
+      margin: $base-margin auto 0;
+    }
+  }
+}

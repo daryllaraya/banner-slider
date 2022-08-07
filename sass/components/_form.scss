@@ -1,0 +1,17 @@
+@use 'abstracts' as *;
+
+/* FORM */
+#contact {
+    form {
+        max-width: 800px;
+        margin: 0 auto;
+    
+        textarea {
+            height: 150px;
+        }
+    }
+}
+
+.form-control {
+    border-radius: 0;
+}

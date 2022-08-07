@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Banner Slider / Carousel</title>
+</head>
+<body>
+  <header class="bg-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Banner Slider / Carousel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="brands">Brands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner"></div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div id="home" class="container reveal fade-bottom text-center py-6">
+      <h1 class="mb-4">Class aptent taciti sociosqu ad litora torquent</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis eros ac magna rutrum ultricies. Ut elementum faucibus finibus. Aliquam at ultricies nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam efficitur, metus a luctus consequat, arcu dolor maximus magna, et mollis elit libero id diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas fermentum maximus orci sed pretium. Vivamus consectetur auctor quam, sit amet venenatis magna tempus eget. Donec suscipit elit a lacus iaculis, nec imperdiet ligula pretium. Duis eu nibh nisi. Aliquam pellentesque lacus vitae tellus varius, a aliquet nunc sodales.</p>
+      <p>Morbi consectetur sit amet metus non accumsan. Etiam nec magna non orci efficitur congue vel eget est. Vestibulum vitae pretium justo. Sed sollicitudin hendrerit ex vel sodales. Vestibulum quis urna sit amet sapien porttitor congue a ut mauris.</p>
+      <p>Pellentesque venenatis velit et dolor tempor posuere. In suscipit massa sed dolor venenatis rhoncus. Donec fringilla pretium leo at sollicitudin.</p>
+      <a class="btn btn-primary" href="#" role="button">Learn More</a>
+      </div>
+    </div>
+
+    <div id="about" class="container-fluid">
+      <div class="container reveal fade-bottom py-6">
+        <div class="row">
+          <h2 class="mb-4">Duis dignissim justo sit amet mattis aliquam</h2>
+          <div class="col-lg-5">
+            <img class="img-fluid" src="/assets/images/poker.jpg" alt="Poker">
+          </div>
+          <div class="col-lg-7">
+            <p class="lead fw-semibold">Donec rutrum risus ac nulla porta, vel consectetur lectus auctor.</p>
+            <p>Sed sollicitudin, justo ac tempus commodo, tellus justo convallis eros, at rhoncus lectus tortor in justo. Nunc ut erat congue, cursus orci et, tempus nulla. Donec quis aliquam ipsum. Donec vel augue a sem suscipit egestas ac ultrices ipsum. In lorem metus, maximus vitae pellentesque in, pellentesque nec diam. Sed nisi libero, lobortis id imperdiet et, cursus quis tellus.</p>
+            <p>Nullam sit amet nisl bibendum, maximus urna eu, aliquet eros. Donec maximus massa sit amet magna tincidunt dictum. Mauris tempor turpis quis vehicula pharetra. Praesent dapibus blandit orci, eu vehicula libero bibendum molestie.</p>
+          </div>
+        </div>
+        <div class="row mt-lg-5">
+          <div class="col-lg-7 order-lg-0 order-1">
+            <p class="lead fw-semibold">Nulla felis leo, sollicitudin sit amet commodo pellentesque.</p>
+            <p>Curabitur gravida, ex non fermentum malesuada, velit mauris elementum felis, nec ullamcorper magna purus vitae velit. Morbi vehicula ligula non congue efficitur. Nunc tincidunt non ex a vehicula. Mauris fermentum enim velit, a convallis lectus placerat in. Pellentesque vel ipsum id urna hendrerit suscipit commodo sit amet urna. Sed mattis dui a iaculis placerat. Aenean sit amet quam vulputate, cursus est pretium, porttitor nisi. Pellentesque tempus est nec congue scelerisque. Donec quis sollicitudin lorem. Donec posuere a ex a dictum.</p>
+            <p>Cras vulputate leo nec condimentum vestibulum. Sed enim justo, lacinia eget malesuada ut, bibendum ut massa. Nullam auctor mattis augue sit amet consectetur.</p>
+          </div>
+          <div class="col-lg-5 order-lg-1 order-0 mt-lg-0 mt-4">
+            <img class="img-fluid" src="/assets/images/cards.jpg" alt="Cards">
+          </div>
+        </div>
+        <p class="fs-5 fw-semibold text-center mt-4">Etiam ac erat sagittis, sodales orci ut, consectetur ex. Nulla nec fermentum lectus. Vivamus sed purus id felis convallis vulputate lobortis eu dui.</p>
+      </div>
+    </div>
+
+    <div id="brands" class="container reveal fade-bottom py-6">
+      <h2 class="text-center mb-4">Mauris nec semper nisl</h2>
+      <p class="text-center mb-5">Morbi ac mauris a nisi elementum iaculis. Phasellus ligula erat, euismod ut rutrum nec, accumsan sed magna.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/assets/images/bally-casino.jpg" class="card-img-top" alt="Bally Casino">
+            <div class="card-body">
+              <h5 class="card-title">Bally Casino</h5>
+              <p class="card-text">Sed elementum, lectus et vestibulum mollis, ex eros consectetur est, at aliquam nibh elit vel urna.</p>
+              <a href="#" class="btn btn-primary">Check it out</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/assets/images/intercasino.jpg" class="card-img-top" alt="InterCasino">
+            <div class="card-body">
+              <h5 class="card-title">InterCasino</h5>
+              <p class="card-text">Phasellus id metus vitae nulla rutrum porta non id sapien morbi sed pulvinar quam magna fermentum.</p>
+              <a href="#" class="btn btn-primary">Check it out</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/assets/images/double-bubble-bingo.jpg" class="card-img-top" alt="Double Bubble Bingo">
+            <div class="card-body">
+              <h5 class="card-title">Double Bubble Bingo</h5>
+              <p class="card-text">Morbi quis nulla nec felis tempor accumsan at vel lorem pharetra tortor eu urna fringilla et diam.</p>
+              <a href="#" class="btn btn-primary">Check it out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="container-fluid">
+      <div class="container reveal fade-bottom py-6">
+        <h2 class="text-center mb-4">Vivamus egestas tristique arcu vel rhoncus</h2>
+        <p class="text-center mb-md-4">Aliquam et est sed massa mattis cursus.</p>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingName" placeholder="John Doe" required>
+              <label for="floatingName">Full Name</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingEmail" placeholder="name@email.com" required>
+              <label for="floatingEmail">Email Address</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Message</label>
+            </div>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="container py-3">
+    <div class="footer text-center">
+      <span>Front-end Developer Technical Exam — <a href="https://www.ballys.com/home/default.aspx" target="_blank">Bally's Interactive</a></span>
+      <span>Applicant — <a href="mailto:daryllaraya@gmail.com">Kim Ian Daryl Laraya</a></span>
+    </div>
+  </footer>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/draggable.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+</html>
